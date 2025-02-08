@@ -45,7 +45,7 @@ This project estimates **canopy height** in **Pokhara Metropolitan City, Nepal**
 
 ### **🔹 Google Earth Engine (GEE)**  
 1. Open **[Google Earth Engine Code Editor](https://code.earthengine.google.com/)**.  
-2. Copy & paste the `gee_script.js` file.  
+2. Copy & paste the `Canopy_Height.js`, `DEM.js`, `Landsat_indices.js` file.  
 3. Run the script to extract **GEDI, Landsat, and DEM data**.  
 4. Export the processed dataset as a `.CSV` or `.GeoTIFF` for further analysis.  
 

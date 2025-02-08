@@ -44,13 +44,24 @@ This project estimates **canopy height** in **Pokhara Metropolitan City, Nepal**
 ## 📜 Running the Code  
 
 ### **🔹 Google Earth Engine (GEE)**  
-1. Open **[Google Earth Engine Code Editor](https://code.earthengine.google.com/)**.  
-2. Copy & paste the `GEDI_Canopy_Height.js`, `DEM_from_GEE.js`, `Landsat_indices.js` file.  
-3. Run the script to extract **GEDI, Landsat, and DEM data**.  
-4. Export the processed dataset as a `.CSV` or `.GeoTIFF` for further analysis.  
+1. Open **[Google Earth Engine Code Editor](https://code.earthengine.google.com/)**.
+2. Upload the `Study_area.zip` (Pokhara Metropolitan City boundary) to **GEE Assets**.
+   - Go to **GEE Assets > Upload** and select the `.zip` file.
+3. Copy & paste the `GEDI_Canopy_Height.js`, `DEM_from_GEE.js`, `Landsat_indices.js` file.  
+4. Run the script to extract **GEDI, Landsat, and DEM data**.  
+5. Export the processed dataset as a `.CSV` or `.GeoTIFF` for further analysis.  
 
 ### **🔹 ArcGIS Pro (Python Script - Spatial Processing)**  
 1. Open **ArcGIS Pro** and create a new project.  
-2. Go to the **Insert** and install dependencies (if required):  
-   ```python
-   pip install arcpy numpy pandas geopandas rasterio
+2. Go to the **Insert tab** and insert new notebook then copy and run the code ArcGIS.py.
+   
+## Files Included in This Repository:
+
+- **study_area.zip**: Shapefile of the study area boundary (Pokhara Metropolitan City).
+- **GEDI_Canopy_Height.js**: Google Earth Engine script for processing GEDI data.
+- **DEM_from_GEE.js**: Google Earth Engine script for processing DEM data.
+- **Landsat_indices.js**: Google Earth Engine script for processing Landsat data.
+- **Python_Script_for_ArcGIS.py**: Python script for further processing in ArcGIS Pro.
+- **Python_Script_for_Data_Analysis.py**: Python script for further processing in python environment.
+
+---

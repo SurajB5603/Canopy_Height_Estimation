@@ -51,9 +51,13 @@ This project estimates **canopy height** in **Pokhara Metropolitan City, Nepal**
 4. Run the script to extract **GEDI, Landsat, and DEM data**.  
 5. Export the processed dataset as a `.CSV` or `.GeoTIFF` for further analysis.  
 
-### **🔹 ArcGIS Pro (Python Script - Spatial Processing)**  
-1. Open **ArcGIS Pro** and create a new project.  
-2. Go to the **Insert tab** and insert new notebook then copy and run the code ArcGIS.py.
+### Steps to Execute in ArcGIS Pro:
+The script processes a raster layer (GEDI_Canopy_Height_Nepal.tif) from an active map in ArcGIS Pro, filters out non-zero values, and converts the remaining raster pixels into point features. The output points are saved in a specified geodatabase.
+1. Open **ArcGIS Pro** and create a new project.
+2. Go to the **Insert** tab and insert a **new notebook**.
+3. Copy and paste the **Python_Script_for_ArcGIS.py** script into the notebook.
+4. **Run the script** to process the raster and convert it into points.
+5. The resulting point features will be saved in the **specified geodatabase**.
    
 ## Files Included in This Repository:
 
